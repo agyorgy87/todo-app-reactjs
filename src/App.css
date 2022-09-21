@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;500&display=swap');
+
+.todoApp {
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputAddButtonContainer {
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+    align-items: center;
+    color: #548CA8;
+    font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-right: 30px;
+    resize: none;
+    outline: none;
+    background-color: #EEEEEE;
+    font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.AddButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    background-color: #548CA8;
+    font-size: 180%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AddButton:hover {
+    background-color: #4eb4cc;
+}
+
+.todoListContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.crossText {
+    text-decoration: line-through;
+    list-style-type: none;
+    color: #EEEEEE;
+    font-size: 25px;
+}
+
+.listitem {
+    list-style-type: none;
+    color: #EEEEEE;
+    font-size: 25px;
+}
+
+.completedButton {
+    border: none;
+    border-radius: 50%;
+    background-color: #548CA8;
+}
+
+.completedButton:hover {
+    background-color: #4eb4cc;
+}
+
+.deleteButton {
+    border: none;
+    border-radius: 50%;
+        background-color: #548CA8;
+}
+
+.deleteButton:hover {
+    background-color: #4eb4cc;
+}
+
+.deleteAllContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.deleteAllButton {
+    height: 40px;
+     width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #548CA8;
+}
+
+.deleteAllButton:hover {
+    background-color: #4eb4cc;
 }
