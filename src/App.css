@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;500&display=swap');
 
-.todoApp {
+.todo-app {
     display: flex;
     justify-content: center;
 }
 
-.inputAddButtonContainer {
+.input-add-button-container {
     display: flex;
     justify-content: center;
 }
@@ -27,7 +27,7 @@ input {
     font-size: 20px;
 }
 
-.AddButton {
+.add-button {
     height: 40px;
     width: 40px;
     border: none;
@@ -38,54 +38,54 @@ input {
     font-size: 180%;
 }
 
-.AddButton:hover {
+.add-button:hover {
     background-color: #4eb4cc;
 }
 
-.todoListContainer {
+.todo-list-container {
     display: flex;
     justify-content: center;
 }
 
-.crossText {
+.cross-text {
     text-decoration: line-through;
     list-style-type: none;
     color: #EEEEEE;
     font-size: 25px;
 }
 
-.listitem {
+.list-item {
     list-style-type: none;
     color: #EEEEEE;
     font-size: 25px;
 }
 
-.completedButton {
+.completed-button {
     border: none;
     border-radius: 50%;
     background-color: #548CA8;
 }
 
-.completedButton:hover {
+.completed-button:hover {
     background-color: #4eb4cc;
 }
 
-.deleteButton {
+.delete-button {
     border: none;
     border-radius: 50%;
         background-color: #548CA8;
 }
 
-.deleteButton:hover {
+.delete-dutton:hover {
     background-color: #4eb4cc;
 }
 
-.deleteAllContainer {
+.delete-all-container {
     display: flex;
     justify-content: center;
 }
 
-.deleteAllButton {
+.delete-all-button {
     height: 40px;
      width: 40px;
     border: none;
@@ -93,6 +93,6 @@ input {
     background-color: #548CA8;
 }
 
-.deleteAllButton:hover {
+.delete-all-button:hover {
     background-color: #4eb4cc;
 }

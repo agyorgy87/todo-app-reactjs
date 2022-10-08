@@ -47,12 +47,12 @@ function App() {
     }
 
     return (
-        <div className="todoApp">
+        <div className="todo-app">
             <div>
                 <p style={{fontFamily: 'Georama'}}>My Cool TO-DO App</p>
-                    <div className="inputAddButtonContainer mt-4">
+                    <div className="input-add-button-container mt-4">
                         <input 
-                            style={{fontFamily: 'Georama'}}
+                            style={{fontFamily: 'Georama'}} 
                             className="form-group"
                             type="text"
                             name="text"
@@ -63,27 +63,27 @@ function App() {
                             autoFocus
                         />
                         <button
-                            className="AddButton ml-2"
+                            className="add-button ml-2"
                             onClick={AddTodo}
                             ><BsPlus/>
                         </button>
                     </div>
                     <br/>
-                    <div className="todoListContainer">
+                    <div className="todo-list-container">
                         {todoList !== [] ? (
                             <ul>
                                 {todoList.map((t) => ( 
-                                    <li style={{fontFamily: 'Georama'}} className={t.isCompleted ? "crossText mb-2" : "listitem mb-2"}>{t.value}
-                                        <button className="completedButton ml-2 mr-2" onClick={(e) => todoCompleted(e, t.id)}><BsCheck/></button>
-                                            <button className="deleteButton" onClick={(e) => deleteTodo(e, t.id)}><BsX/></button>
+                                    <li style={{fontFamily: 'Georama'}} className={t.isCompleted ? "cross-text mb-2" : "list-item mb-2"}>{t.value}
+                                        <button className="completed-button ml-2 mr-2" onClick={(e) => todoCompleted(e, t.id)}><BsCheck/></button>
+                                            <button className="delete-button" onClick={(e) => deleteTodo(e, t.id)}><BsX/></button>
                                     </li>  
                                 ))}
                             </ul>   
                         ) : null } 
                     </div>
-                    <div className="deleteAllContainer">
+                    <div className="delete-all-container">
                         <div>
-                            <button className="deleteAllButton" onClick={deleteAll}><BsFillTrashFill/></button>
+                            <button className="delete-all-button" onClick={deleteAll}><BsFillTrashFill/></button>
                         </div>
                     </div>
             </div>        
